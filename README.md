@@ -46,3 +46,9 @@ See [Business Case](docs/BUSINESS_CASE.md), [Architecture](docs/SYSTEM_OVERVIEW.
 **Source code:** Maintained privately. This public repository documents the portfolio business case and architecture.
 
 **Project:** VAULTIS — Banking Fraud Detection & Decision Intelligence
+
+## Who it benefits
+
+Bank fraud analysts, investigators and financial security managers: category-specific alert prioritization, explainable risk signals and investigation context.
+
+These are intended users and benefits, not evidence of adoption or measured customer outcomes.
