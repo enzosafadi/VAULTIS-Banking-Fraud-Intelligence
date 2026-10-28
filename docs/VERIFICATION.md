@@ -44,3 +44,8 @@ The visible 2,500 monitored events, 406 critical alerts, 904 high/critical event
 Inspect Fraud Investigations, Cross-Category Intelligence and Bank Network; exercise filters and empty selections; capture additional actual screenshots only after reviewing each view. Preserve the V1 runtime while implementing and evaluating the V2 account takeover workflow.
 
 Passing six V1 tests and rendering one page do not validate fraud accuracy, persistent case handling, access control, recovery or protection of real accounts.
+
+## Software v0.1.1 chart patch — 2026-10-28
+The private app now gives the two Command Center charts separate full-width rows, adds gaps and labels, applies stable severity colors and sorts bank scores on a fixed 0–100 scale. The previous runtime is preserved at `archive/v0.1-before-chart-spacing` in the private repository.
+
+In the development environment, the six existing tests passed in 0.42s. Streamlit AppTest loaded the updated Command Center without an application exception and exercised a single-bank filter and an empty bank selection. These are automated checks, not a browser screenshot review. The owner's Windows copy still needs the updated app.py and a visual recheck. SS1 shows the earlier layout and is retained as V1 history.
