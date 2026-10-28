@@ -22,7 +22,7 @@ Actions: action ID, case ID, actor, action type, simulated outcome, reason, rela
 Missing evidence must be visible. Scores are heuristic prioritization signals, not fraud probabilities. Currency totals must stay separate unless an explicit conversion method is provided.
 
 ## Existing software baseline
-The repository currently contains the V1 v0.1 Streamlit prototype, category rules and independent synthetic events. It does not yet establish the V2 temporal workflow, persistent cases or simulated recovery. Successful runtime and UI verification remain unconfirmed in this revision.
+The repository currently contains the V1 v0.1 Streamlit prototype, category rules and independent synthetic events. It does not yet establish the V2 temporal workflow, persistent cases or simulated recovery. The owner-provided local evidence now confirms launch and Command Center rendering plus 6 existing tests passed in 5.18s on Windows/Python 3.13. Other views are not yet reviewed. See [verification record](VERIFICATION.md).
 
 ## Boundaries
 Synthetic data only. No real customer accounts, payment execution, bank feeds or protection guarantees. Authentication, authorization and secure deployment remain additional engineering work before any non-local use.

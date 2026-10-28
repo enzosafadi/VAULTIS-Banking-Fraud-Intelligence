@@ -1,5 +1,11 @@
 # VAULTIS — Documentation Change Log
 
+## Verification evidence — 2026-10-28
+- Record owner-provided Windows/Python 3.13 installation, six passing V1 tests (5.18s), local launch and Command Center rendering.
+- Publish actual screenshot SS1 under screenshots/V1; other workspace captures remain pending.
+- Record Python 3.15 installation failure and Streamlit width deprecation warnings without claiming a code fix.
+- Preserve the pre-update repository state on archive/pre-verification-2026-10-28. V1 documentation archives and runtime code remain unchanged.
+
 ## V2 — 2026-10-28
 - Specify a case documentation workspace for staff notes, contact summaries, evidence, decisions and handovers, with persistence, authorship, revision history and acceptance checks; implementation pending.
 - Add UC-ATO-001: fictional event timeline, explicit candidate suspicion trigger, legitimate comparisons, analyst response, institutional usefulness and acceptance evidence.

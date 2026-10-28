@@ -27,7 +27,7 @@ In that example, a new-device login at 09:02 is followed by a recovery-phone cha
 VAULTIS is intended to help the institution assemble evidence in one view, explain alert priority, coordinate simulated verification and containment, and retain the recovery/closure record. Detection quality, analyst effort and restrictions on legitimate customers must be measured before claiming benefit. The rule and workflow remain V2 design, not implemented protection.
 
 ## Scope and delivery status
-The V2 design is defined; implementation remains pending. The private repository retains the V1 broad fraud code baseline. Runtime success and UI verification are not confirmed here. The first V2 demonstration concentrates on one fictional institution rather than expanding the eight-bank comparison.
+The V2 design is defined; implementation remains pending. The private repository retains the V1 broad fraud code baseline. The V1 baseline now has owner-provided evidence of local launch, Command Center rendering and six passing existing tests; see [verification record](VERIFICATION.md). This does not validate the V2 design. The first V2 demonstration concentrates on one fictional institution rather than expanding the eight-bank comparison.
 
 ## Value hypothesis
 Improved investigative context and consistent response are hypotheses. Synthetic evaluation cannot establish production accuracy, customer safety, actual financial savings or operational adoption. No ROI or loss-prevention result is claimed. See [V2 scope](V2_SCOPE.md) and [roadmap](ROADMAP.md).

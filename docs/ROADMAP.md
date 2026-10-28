@@ -5,7 +5,7 @@
 |---|---|---|
 | V1 preservation | Retain original documentation under docs/V1 | Included in this documentation revision |
 | V2 definition | Focus, scope, scenarios and acceptance criteria | Defined in [V2 specification](V2_SCOPE.md) |
-| 1. Verify baseline | Install and run V1, execute existing tests, record failures and inspect UI | Pending verification |
+| 1. Verify baseline | Install and run V1, execute existing tests, record failures and inspect UI | Partial: 6 tests passed; local launch and Command Center captured; remaining views/filters pending. See [evidence](VERIFICATION.md) |
 | 2. Model journeys | Synthetic account histories, ordered events, labels, benign controls and data-quality cases | Planned |
 | 3. Detect takeover | Account-scoped temporal rules, explanations and reproducible evaluation | Planned |
 | 4. Operate cases | Persistent cases, ownership, valid transitions, simulated controls, audit history and the [case documentation workspace](CASE_DOCUMENTATION.md), including durable notes, revisions, search and handovers | Planned |
