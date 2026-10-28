@@ -1,54 +1,36 @@
 # VAULTIS
-### Banking Fraud Detection & Decision Intelligence
-**Enterprise portfolio case study | Prototype v0.1 | Fictional banking network**
+### Account Takeover Detection & Response
+**Independent simulated portfolio project | Documentation V2 | Implementation baseline v0.1**
 
-VAULTIS is an interactive banking fraud intelligence prototype designed to illustrate how investigators could prioritize and investigate suspicious activity across **eight fictional financial institutions**.
+VAULTIS focuses on how a digital banking fraud team investigates and responds when an attacker gains access to a customer account and attempts to move funds.
 
-## The business problem
-Financial institutions face fragmented signals across authentication, payments, and onboarding. Separate alert queues can obscure multi-stage attacks and increase manual triage effort. VAULTIS explores a unified approach that differentiates:
-1. **Phishing:** credential theft and suspicious authentication signals.
-2. **Credit card fraud:** card testing, unusual velocity, geographical inconsistencies.
-3. **Identity theft:** synthetic identities, mismatched identities, fraudulent onboarding.
-4. **Potential attack chains:** signals spanning these categories, surfaced for investigation rather than asserted as confirmed causal links.
+## One connected fraud journey
+Compromised access → unfamiliar login → security change → new beneficiary → attempted transfer → investigation → simulated protection → account recovery.
 
-## Solution and workflow
-**Synthetic events → category-specific detection rules → explainable 0–100 risk score → severity-based queue → investigator review → network intelligence.**
+The planned workspace joins events into an evidence timeline, explains risk signals, supports analyst decisions and records simulated verification, containment and recovery. Benign travel, device replacement and genuine recovery requests are part of the evaluation.
 
-### Prototype features implemented
-- Multi-bank command center with risk KPIs and category distribution.
-- Explainable risk scores, severity classification, and recommended triage action.
-- Investigation workspace with event evidence and case context.
-- Potential multi-stage fraud indicator view.
-- Eight-bank comparative monitoring view.
-- Reproducible simulated dataset (2,500 events by default).
+## What exists and what comes next
+| Area | Status |
+|---|---|
+| Private V1 code | Broad fraud prototype: category rules, Streamlit workspaces and synthetic eight-bank events |
+| Execution and visual verification | Not confirmed in this documentation revision |
+| V2 account takeover scope and scenarios | Defined |
+| Temporal account journeys, persistent cases and action history | Planned |
+| Simulated controls and recovery workflow | Planned |
+| V2 evaluation results and screenshots | Pending implementation and verification |
 
-### Eight fictional institutions
-Meridian Capital Bank (Switzerland), Northbridge Financial (Canada), Altrix International Bank (UK), Cedarstone Banking Group (Lebanon), Vantara Financial (Singapore), Helix Commercial Bank (Germany), Novaris Bank (USA), and Atlas Continental Bank (France).
+V2 denotes the new documentation and project orientation. It does not mean a software v2.0 release has shipped.
 
-## Business value hypothesis
-VAULTIS is designed to explore **faster alert prioritization, better investigative context, and visibility into linked fraud signals**. These are intended benefits, **not measured improvements**. Real-world performance requires labelled cases, false-positive analysis, precision/recall evaluation, analyst time studies, security testing, and deployment validation.
+## Documentation
+- [Business case](docs/BUSINESS_CASE.md)
+- [System overview](docs/SYSTEM_OVERVIEW.md)
+- [V2 scope and acceptance criteria](docs/V2_SCOPE.md)
+- [Roadmap](docs/ROADMAP.md)
+- [Change log](CHANGELOG.md)
+- [Preserved V1 documentation](docs/V1/README.md)
 
-## Architecture
-- UI: Streamlit + Plotly.
-- Processing: Python / pandas.
-- Detection: deterministic, category-specific heuristic rules with interpretable reasons.
-- Dataset: seeded, fictional, synthetic events; no actual customer records.
-- Status: working prototype code in private repository, not a live banking service.
+## Intended users and value
+Fraud analysts and fraud operations leads. Intended benefits are clearer evidence, consistent case decisions and visibility into recovery. No adoption, time savings, loss prevention or detection accuracy has been measured.
 
-## Deliverables and evidence
-See [Business Case](docs/BUSINESS_CASE.md), [Architecture](docs/SYSTEM_OVERVIEW.md), and [Roadmap](docs/ROADMAP.md).
-
-**Screenshots:** SS1 — Command Center; SS2 — Fraud Investigation; SS3 — Cross-Category Intelligence. Screenshots will be added after verification of the running UI. No fabricated screenshots.
-
-## Limitations and responsible representation
-**No production AI model is implemented in v0.1.** This is a rule-based prototype, not a validated AI-powered fraud prevention system. No live bank feeds, payment decisions, or customer identities are involved. Synthetic event amounts have multiple currencies; do not sum them without FX conversion. Bank names are fictional and not endorsements or verified trademarks.
-
-**Source code:** Maintained privately. This public repository documents the portfolio business case and architecture.
-
-**Project:** VAULTIS — Banking Fraud Detection & Decision Intelligence
-
-## Who it benefits
-
-Bank fraud analysts, investigators and financial security managers: category-specific alert prioritization, explainable risk signals and investigation context.
-
-These are intended users and benefits, not evidence of adoption or measured customer outcomes.
+## Representation
+All data is simulated. Protective actions are planned simulations, with no live bank access or payment enforcement. The approach is rule-based; no trained AI model or guarantee of account safety is claimed. Source code remains private. This public repository contains portfolio documentation, with actual UI screenshots to follow verification.
