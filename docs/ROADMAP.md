@@ -1,9 +1,17 @@
-# Delivery Roadmap
-- **v0.1 — Prototype foundation:** eight fictional banks, 2,500 deterministic synthetic events, category-specific explainable detection, dashboards, analyst case view, unit tests.
-- **v0.2 — Case operations:** SQLite/PostgreSQL persistence, investigator actions, assignment, SLA, audit trail.
-- **v0.3 — Detection evaluation:** synthetic labels, rule quality metrics, false-positive studies, configurable thresholds.
-- **v0.4 — Entity intelligence:** account/device/IP relationship graph and time-ordered multi-event fraud chains.
-- **v0.5 — AI-assisted investigation:** grounded evidence summaries, human approval, safeguards and evaluations.
-- **v1.0 — Hardened demo:** authentication, RBAC, CI, deployment, user manual, validated screenshots and polished portfolio.
+# VAULTIS — V2 Delivery Roadmap
+**Current orientation: Account Takeover Detection & Response | 2026-10-28**
 
-Milestones after v0.1 are plans, not implemented capabilities.
+| Milestone | Work and exit evidence | Status |
+|---|---|---|
+| V1 preservation | Retain original documentation under docs/V1 | Included in this documentation revision |
+| V2 definition | Focus, scope, scenarios and acceptance criteria | Defined in [V2 specification](V2_SCOPE.md) |
+| 1. Verify baseline | Install and run V1, execute existing tests, record failures and inspect UI | Pending verification |
+| 2. Model journeys | Synthetic account histories, ordered events, labels, benign controls and data-quality cases | Planned |
+| 3. Detect takeover | Account-scoped temporal rules, explanations and reproducible evaluation | Planned |
+| 4. Operate cases | Persistent cases, ownership, valid transitions, simulated controls and audit history | Planned |
+| 5. Recover accounts | Verification, authorized simulated release, recovery checklist and closure | Planned |
+| 6. Demonstrate V2 | Held-out scenario results, failure analysis, operator walkthrough and real UI screenshots | Planned |
+
+Advance through the exit gates before claiming completion. Maintain one deep account takeover workflow; broad multi-bank or general-fraud expansion is deferred. AI/ML is not a prerequisite or implemented V2 capability.
+
+Documentation V2 supersedes the earlier roadmap. Software remains the original v0.1 baseline until changes are implemented and tested.
