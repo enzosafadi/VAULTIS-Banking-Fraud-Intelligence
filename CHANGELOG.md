@@ -1,5 +1,13 @@
 # VAULTIS — Documentation Change Log
 
+## Software v0.1.1 — chart readability — 2026-10-28
+- Give each Command Center chart its own full-width row.
+- Separate grouped severity bars, use stable severity colors and show counts.
+- Increase bank-row spacing, sort by score and display numeric score labels on a fixed 0–100 axis.
+- Preserve the preceding private source on `archive/v0.1-before-chart-spacing`.
+- Validation: six existing tests passed; Streamlit AppTest loaded the Command Center and checked single-bank and empty-filter states.
+- Owner-side visual confirmation of this patch is pending. SS1 remains an accurate historical screenshot of v0.1, not v0.1.1. V2 remains planned.
+
 ## Verification evidence — 2026-10-28
 - Record owner-provided Windows/Python 3.13 installation, six passing V1 tests (5.18s), local launch and Command Center rendering.
 - Publish actual screenshot SS1 under screenshots/V1; other workspace captures remain pending.
