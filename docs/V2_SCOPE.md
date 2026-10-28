@@ -26,6 +26,13 @@ Phishing is a possible entry point into the takeover journey. V2 does not claim 
 | ATO-07 | Measure detection and customer friction | Case-level confusion matrix and action outcomes |
 | ATO-08 | Preserve a traceable decision history | Actor, timestamp, prior/new state, reason and related evidence |
 
+## User documentation requirement
+| ID | Requirement | Demonstration evidence |
+|---|---|---|
+| ATO-09 | Provide a case documentation workspace for staff notes, contact summaries, evidence references, decisions and handovers | Durable save/reload, attributed entries, revision history, access boundaries and safe export |
+
+See [Case Documentation Workspace](CASE_DOCUMENTATION.md) for entry fields, correction rules, a worked example and acceptance criteria. This is planned V2 functionality.
+
 ## Scenario catalogue
 | ID | Synthetic scenario | Expected review focus |
 |---|---|---|
