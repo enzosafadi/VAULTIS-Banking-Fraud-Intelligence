@@ -1,6 +1,7 @@
 # VAULTIS — Documentation Change Log
 
 ## V2 — 2026-10-28
+- Specify a case documentation workspace for staff notes, contact summaries, evidence, decisions and handovers, with persistence, authorship, revision history and acceptance checks; implementation pending.
 - Add UC-ATO-001: fictional event timeline, explicit candidate suspicion trigger, legitimate comparisons, analyst response, institutional usefulness and acceptance evidence.
 - Select account takeover detection and response for digital banking as the single project orientation.
 - Replace broad phishing/card/identity monitoring as the active roadmap with one connected investigation and recovery journey.
