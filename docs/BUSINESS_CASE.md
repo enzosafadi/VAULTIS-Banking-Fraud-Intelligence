@@ -19,6 +19,13 @@ Fraud analysts own triage and case evidence. Fraud operations leads review escal
 ## Demonstration
 A fictional customer account shows compromised access, security changes, a new beneficiary and an attempted transfer. The analyst reviews evidence, records a disposition, simulates containment and completes recovery checks. Legitimate travel and device replacement provide comparison cases.
 
+## Detailed use case and suspicion trigger
+See [UC-ATO-001: Account Takeover Use Case](USE_CASE.md) for the complete fictional timeline, proposed rule, response workflow, legitimate comparison and acceptance evidence.
+
+In that example, a new-device login at 09:02 is followed by a recovery-phone change, a new beneficiary and a CAD 4,800 transfer attempt at 09:09. The proposed trigger links those four events on the same account within an illustrative 15-minute window. The combination suggests possible control of both account access and the payment destination; each event alone can have a legitimate explanation.
+
+VAULTIS is intended to help the institution assemble evidence in one view, explain alert priority, coordinate simulated verification and containment, and retain the recovery/closure record. Detection quality, analyst effort and restrictions on legitimate customers must be measured before claiming benefit. The rule and workflow remain V2 design, not implemented protection.
+
 ## Scope and delivery status
 The V2 design is defined; implementation remains pending. The private repository retains the V1 broad fraud code baseline. Runtime success and UI verification are not confirmed here. The first V2 demonstration concentrates on one fictional institution rather than expanding the eight-bank comparison.
 
