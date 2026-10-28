@@ -1,32 +1,26 @@
-# VAULTIS — Business Case
-## Executive summary
-Financial crime investigation teams must distinguish payment anomalies, phishing-related compromise, and identity misuse. VAULTIS proposes a centralized, explainable triage workspace across a fictional network of eight banks.
+# VAULTIS — V2 Business Case
+**Account Takeover Detection & Response | Simulated portfolio project**
 
-## Stakeholders
-Fraud analysts; fraud operations leads; risk management; financial crime compliance; security teams; executive management.
+## Problem
+A suspicious login, changed contact details, beneficiary addition and transfer attempt can appear separately. An analyst needs a time-ordered account view to decide whether these signals indicate takeover or legitimate activity, then document an appropriate response and recovery.
 
-## Problems and proposed responses
-| Problem | VAULTIS design response | Success metric to validate |
+## Intended users
+Fraud analysts own triage and case evidence. Fraud operations leads review escalations and simulated release decisions. Security and customer-support roles supply session and recovery context in the demonstration.
+
+## Design response and measurement
+| Need | Planned response | Evidence to collect |
 |---|---|---|
-| Fragmented alert queues | Unified multi-bank command center | Median time to triage |
-| Alert overload | Explainable category-specific scoring | Precision at top-K; false positive rate |
-| Disconnected attack stages | Cross-category signal correlation | Investigator-confirmed linked cases |
-| Limited case context | Investigation details and evidence reasons | Analyst handling time |
-| Weak network visibility | Bank and category risk comparisons | Detection coverage by institution |
+| Connect suspicious stages | Account-scoped event timeline | Scenario-level coverage and missed sequences |
+| Explain prioritization | Versioned rules and evidence reasons | Reproducible scores and analyst review |
+| Protect without excessive friction | Simulated verification and holds | Benign restriction rate and action outcomes |
+| Resolve consistently | Persistent cases and recovery checks | Valid transitions, unresolved cases and closure evidence |
+| Assess detection quality | Separate truth labels and held-out scenarios | Confusion matrix, precision, recall and false-positive rate |
 
-## Example scenario (fictional)
-A customer receives a phishing message, credentials appear compromised, a new identity detail is observed, and a payment anomaly follows. VAULTIS would surface the associated indicators for human review. The current v0.1 demo only flags signal co-occurrence within events; full cross-event causal/entity correlation is on the roadmap.
+## Demonstration
+A fictional customer account shows compromised access, security changes, a new beneficiary and an attempted transfer. The analyst reviews evidence, records a disposition, simulates containment and completes recovery checks. Legitimate travel and device replacement provide comparison cases.
 
-## Value and measurement
-Potential savings = (baseline minutes per alert − new minutes per alert) × reviewed alerts × fully loaded analyst cost per minute. This is a **planning formula**, not a measured ROI. Pilot studies must establish baseline volumes, quality, and investigator outcomes.
+## Scope and delivery status
+The V2 design is defined; implementation remains pending. The private repository retains the V1 broad fraud code baseline. Runtime success and UI verification are not confirmed here. The first V2 demonstration concentrates on one fictional institution rather than expanding the eight-bank comparison.
 
-## Risks and controls
-- False positives: evaluate against labelled synthetic and eventually consented/authorized data.
-- Bias and drift: test across groups and channels with appropriate privacy safeguards.
-- Security: require access controls, audit logging, encryption, retention limits before production.
-- Governance: human review; no autonomous customer blocking in prototype.
-- Data: synthetic only, no live banking feeds.
-
-## Scope
-Current: rule-based triage prototype and eight-bank synthetic demonstration.
-Future: auditable cases, entity graph, streaming integrations, validated ML and model governance.
+## Value hypothesis
+Improved investigative context and consistent response are hypotheses. Synthetic evaluation cannot establish production accuracy, customer safety, actual financial savings or operational adoption. No ROI or loss-prevention result is claimed. See [V2 scope](V2_SCOPE.md) and [roadmap](ROADMAP.md).
