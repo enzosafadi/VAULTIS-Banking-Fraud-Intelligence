@@ -37,7 +37,7 @@ Missing evidence creates misses; an urgent legitimate sequence creates false pos
 [Business case](docs/BUSINESS_CASE.md) · [Worked use case](docs/USE_CASE.md) · [System overview](docs/SYSTEM_OVERVIEW.md) · [Rules and data](docs/RULES_AND_DATA.md) · [Operator manual](docs/USER_MANUAL.md) · [Case documentation workspace](docs/CASE_DOCUMENTATION.md) · [Scope and acceptance](docs/V2_SCOPE.md) · [Verification](docs/VERIFICATION.md) · [Evaluation summary](reports/EVALUATION.json) · [Roadmap](docs/ROADMAP.md) · [Screenshot gallery](docs/SCREENSHOTS.md) · [Change log](CHANGELOG.md)
 
 ## Actual screenshots — V1 history
-These are actual owner-supplied captures of the preceding v0.1.2 application, not previews of V2. V2 screenshots will follow its local visual acceptance.
+These are actual owner-supplied captures of the preceding v0.1.2 application, not previews of V2. A verified V2 overview screenshot is now available; the other workspaces still await visual review.
 
 ### SS2 — readable dashboard with ascending bars
 ![V1 dashboard with ascending fraud-type bars](screenshots/V1/SS2.png)
@@ -49,3 +49,7 @@ The [gallery](docs/SCREENSHOTS.md) retains SS1 and explains the evidence scope.
 
 ## Version preservation and source
 Source and raw synthetic records stay in the private VAULTIS-Core repository. V1 documentation remains in [docs/V1](docs/V1/README.md); all preceding public content is preserved on `archive/v0.1.2-before-v2`. V2 delivers a local portfolio demonstration; production authentication, secure deployment, integrations and independent validation are outside this release.
+
+## Verified V2 operations overview
+![V2 SS1: populated operations overview](screenshots/V2/SS1.png)
+Owner-supplied Windows capture, reviewed 2026-10-28: 120 synthetic accounts, 66 correlated alerts, eight active simulated holds and twelve closed cases. The visible queue includes closed cases with released holds. This confirms the overview renders and starter history loads; it does not verify every workflow interaction. See the [gallery](docs/SCREENSHOTS.md).

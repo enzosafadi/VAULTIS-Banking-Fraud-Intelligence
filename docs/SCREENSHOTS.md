@@ -13,5 +13,9 @@ Owner-supplied capture reviewed on 2026-10-28. Fraud-type bars ascend within eac
 ![V1 SS3: actual investigation workspace](../screenshots/V1/SS3.png)
 Owner-supplied local investigation view: event selection, heuristic risk score, severity, nominal amount, evidence and recommendation. This confirms rendering, not selector interaction or fraud accuracy.
 
-## V2 capture status
-V2 is implemented and automated interaction checks pass. Actual V2 desktop screenshots remain pending. The images above are retained as V1 history and must not be represented as V2 features. Planned V2 captures: operations overview, evidence timeline, case journal, response/recovery and evaluation.
+## V2 SS1 — populated operating overview
+![V2 SS1: actual populated account protection operations](../screenshots/V2/SS1.png)
+Owner-supplied Windows capture, reviewed 2026-10-28. Visible counts are 120 synthetic accounts, 66 correlated alerts, eight active simulated holds and twelve closed cases. The queue shows both new and closed cases, including released holds. This is an actual v2.0.1 local application capture, not generated imagery.
+
+## Remaining V2 captures
+Investigation timeline, response/recovery, case documentation and evaluation still await owner-side visual review. A screenshot of one overview does not establish complete functional acceptance. V1 images remain preserved above.

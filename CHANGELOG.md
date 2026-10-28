@@ -1,5 +1,9 @@
 # VAULTIS — Change Log
 
+## V2 overview evidence — 2026-10-28
+- Publish actual owner-supplied V2 SS1 and confirm the populated Windows overview: 120 accounts, 66 alerts, eight active simulated holds and twelve closed cases.
+- Preserve all V1 screenshots and versions. Other V2 workspace acceptance remains pending.
+
 ## v2.0.1-demo — populated operating history — 2026-10-28
 - Add fictional starter investigations, active holds, recovery reviews, completed cases and handover notes through the same validated workflow operations.
 - Fresh-database cards show eight active holds and twelve closed cases from persistent records.

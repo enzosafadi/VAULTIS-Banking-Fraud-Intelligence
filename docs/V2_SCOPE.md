@@ -19,6 +19,6 @@ VAULTIS now implements one deep account takeover workflow for one fictional inst
 S01 routine banking; S02 travel/new device; S03 genuine recovery; S04 credential takeover; S05 hijacked existing session; S06 failed verification/cash-out; S07 small transfer attempts; S08 missing/late/duplicate evidence; S09 shared device; S10 urgent legitimate sequence. Duplicate actions and early-release denial are separate workflow tests rather than an attack family.
 
 ## Demonstration completion status
-Implementation, 26 automated tests and the reproducible end-to-end walkthrough are complete. V1 local visual evidence is published. V2 desktop visual acceptance and V2 screenshots are the remaining portfolio presentation gate. Production deployment is outside scope.
+Implementation, 26 automated tests and the reproducible end-to-end walkthrough are complete. V1 local visual evidence is published. V2 Windows launch and the populated overview are visually confirmed in SS1. The remaining workspace reviews and screenshots are the final portfolio presentation gate. Production deployment is outside scope.
 
 No general-fraud coverage, actual account safety, real payment decision, live bank integration, trained AI or real-world performance result is claimed.

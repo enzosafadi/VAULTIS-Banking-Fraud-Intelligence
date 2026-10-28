@@ -10,7 +10,7 @@
 | Operate cases | Implemented: SQLite, ownership, revisions, notes, handovers and audit |
 | Recover accounts | Implemented: simulated checks and reviewer-controlled release/closure |
 | Verify V2 logic/UI interactions | 26 passing automated tests and complete synthetic case walkthrough |
-| V2 desktop visual acceptance | Pending owner-side launch and workspace review |
-| V2 portfolio screenshots | Pending actual V2 capture; published images are explicitly V1 |
+| V2 desktop visual acceptance | Windows launch and populated overview confirmed in V2 SS1; remaining workspaces pending |
+| V2 portfolio screenshots | Actual V2 SS1 published; other workspace captures pending. V1 history preserved |
 
-The next action is to run the V2 package locally, verify each workspace and capture actual V2 screenshots. The local demonstration is implemented; production banking integration, authentication and independent validation are separate future work, not promised completed features.
+The next action is to review an active V2 investigation, its notes, response controls and evaluation, then capture those views. The local demonstration is implemented; production banking integration, authentication and independent validation are separate future work, not promised completed features.

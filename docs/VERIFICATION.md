@@ -31,3 +31,6 @@ Automated Streamlit interactions are not a rendered desktop visual review. V2 Wi
 
 ## v2.0.1 populated startup
 Two additional tests verify fresh-database operating counts, repeat-start idempotence and preservation of existing operator notes/actions. The current suite has 26 passing tests. A fresh starter set contains eight active simulated holds and twelve closed cases, derived from saved workflow state. See [startup summary](../reports/DEMO_ACTIVITY.json). Demo activity is labelled in each seeded note and action. Prior operator work is never replaced to force these counts.
+
+## Owner-side v2.0.1 overview acceptance — 2026-10-28
+The owner applied the update, restarted Streamlit and supplied [V2 SS1](../screenshots/V2/SS1.png). The overview visibly renders 120 accounts, 66 alerts, eight active simulated holds and twelve closed cases. The new preloaded-history caption and closed/released queue rows are visible. Overview rendering and populated startup are confirmed on Windows. The remaining workspaces and end-to-end owner interaction are still pending visual acceptance.
