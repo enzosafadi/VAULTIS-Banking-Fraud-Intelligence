@@ -35,3 +35,6 @@ Analysts operate their assigned cases. Reviewers can reassign, release recovered
 
 ## Evaluation and interpretation
 Detection evaluation deliberately reveals truth labels separately from the operational workspace. Clearing a false-positive case does not erase that detection failure. Read precision/recall with scenario counts and known misses. There is no real-time monitoring, live enforcement or guarantee that an unflagged account is safe.
+
+## Populated starter activity (v2.0.1)
+The first load adds fictional notes and valid workflow histories to selected untouched cases. New data starts with eight active simulated holds and twelve closed cases. Reopening the app does not duplicate that history. Any case with your notes or existing state changes is skipped. These totals then change with your work; they are not hard-coded cards. Back up data/vaultis_v2.sqlite3 before installing an update.

@@ -1,5 +1,11 @@
 # VAULTIS — Change Log
 
+## v2.0.1-demo — populated operating history — 2026-10-28
+- Add fictional starter investigations, active holds, recovery reviews, completed cases and handover notes through the same validated workflow operations.
+- Fresh-database cards show eight active holds and twelve closed cases from persistent records.
+- Preserve existing operator notes/actions, prevent repeated seeding, and verify both with two new tests (26 passing tests total).
+- Archive v2.0.0 on archive/v2.0.0-before-populated-demo.
+
 ## v2.0.0-demo — 2026-10-28
 - Deliver the focused account takeover local application: event journeys, temporal rules, persistent cases, staff journal, simulated response/recovery and JSON case reports.
 - Add held-out synthetic evaluation with false positives and misses; 24 automated tests and a reproducible complete workflow.

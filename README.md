@@ -1,5 +1,5 @@
 # VAULTIS — Account Takeover Detection & Response
-**Independent simulated portfolio project | v2.0.0-demo | Private implementation**
+**Independent simulated portfolio project | v2.0.1-demo | Private implementation**
 
 VAULTIS explores how a digital banking fraud team connects suspicious account activity, investigates the evidence, simulates proportionate protective actions and documents customer recovery.
 
@@ -17,8 +17,11 @@ An unfamiliar-device login, recovery-contact change, new beneficiary and transfe
 
 All actions are simulations. Demo identities are selectable without authentication. No real bank data, live payment decisions or production account protection is involved.
 
+## Populated operating history
+Fresh databases include **8 active simulated holds and 12 closed cases**, with persisted fictional case histories, notes and audit actions. Counts come from case records and change with operator work. Existing operator notes and state changes are preserved; they are not overwritten to force startup totals. See [startup summary](reports/DEMO_ACTIVITY.json).
+
 ## Validation and observed synthetic results
-24 automated tests pass, including Streamlit interaction checks. A reproducible walkthrough completes note creation, simulated containment, recovery, reviewer release, closure and export. Desktop visual acceptance of V2 remains pending.
+26 automated tests pass, including Streamlit interaction checks. A reproducible walkthrough completes note creation, simulated containment, recovery, reviewer release, closure and export. Windows launch and the initial V2 overview are confirmed; full desktop visual acceptance remains pending.
 
 | 120 authored synthetic journeys | Result |
 |---|---:|

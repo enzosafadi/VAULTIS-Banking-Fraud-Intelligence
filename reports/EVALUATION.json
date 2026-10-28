@@ -29,5 +29,5 @@
     "pytest": "9.2.0",
     "python": "3.12.14"
   },
-  "automated_tests": 24
+  "automated_tests": 26
 }

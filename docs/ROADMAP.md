@@ -1,5 +1,5 @@
 # VAULTIS — Delivery Status
-**v2.0.0-demo | 2026-10-28**
+**v2.0.1-demo | 2026-10-28**
 
 | Milestone | Status / evidence |
 |---|---|
@@ -9,7 +9,7 @@
 | Detect takeover | Implemented: two temporal rules, source evidence and evaluation |
 | Operate cases | Implemented: SQLite, ownership, revisions, notes, handovers and audit |
 | Recover accounts | Implemented: simulated checks and reviewer-controlled release/closure |
-| Verify V2 logic/UI interactions | 24 passing automated tests and complete synthetic case walkthrough |
+| Verify V2 logic/UI interactions | 26 passing automated tests and complete synthetic case walkthrough |
 | V2 desktop visual acceptance | Pending owner-side launch and workspace review |
 | V2 portfolio screenshots | Pending actual V2 capture; published images are explicitly V1 |
 

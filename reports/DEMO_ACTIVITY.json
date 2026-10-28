@@ -1,0 +1,17 @@
+{
+  "simulation": true,
+  "fresh_database": true,
+  "accounts": 120,
+  "correlated_alerts": 66,
+  "active_simulated_holds": 8,
+  "closed_cases": 12,
+  "workflow_status": {
+    "New": 92,
+    "Closed": 12,
+    "Containment simulated": 4,
+    "Recovery review": 4,
+    "In review": 4,
+    "Verification pending": 4
+  },
+  "operator_modified_cases": "Preserved; actual counts may differ after prior work."
+}
