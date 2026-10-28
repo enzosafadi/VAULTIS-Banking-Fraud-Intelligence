@@ -1,36 +1,46 @@
 # VAULTIS — Verification Record
-**2026-10-28 | v2.0.1-demo**
+**2026-10-28 | Current software: v2.0.1-demo**
 
-## V1 owner-side evidence
-Windows/Python 3.13 dependency installation succeeded; the six original tests passed in 5.18s. The owner ran the app locally and supplied actual dashboard and investigation captures. Later captures confirm the readable v0.1.2 layout and ascending fraud-type bars. See [gallery](SCREENSHOTS.md).
+## Current verified state
+| Check | Result | Evidence scope |
+|---|---|---|
+| Automated suite | 26 passing tests recorded | Development environment; code matches committed source |
+| Synthetic walkthrough | Completed note → containment → recovery → reviewer release → closure → export | Reproducible temporary-database workflow |
+| Windows launch | Confirmed | Owner-side runtime and screenshots |
+| Populated V2 overview | Confirmed | [Actual V2 SS1](../screenshots/V2/SS1.png) |
+| Other V2 workspaces | Automated interactions checked | Owner-side visual acceptance and captures pending |
 
-The V1 Python 3.15 attempt failed during a pandas source build. Streamlit also warned about deprecated width arguments. V2 uses the newer width API with a raised Streamlit minimum. The owner has now launched V2 on Windows and supplied an initial overview crop. Full workspace visual review remains pending.
+## Automated coverage
+The suite contains six retained V1 tests, eight temporal-detector tests, eight case-store tests, two Streamlit UI tests and two starter-history tests. It covers account/session/beneficiary isolation, event ordering, duplicates, missing evidence, false positives, stale revisions, role checks, denied actions, note corrections, durable reload, closed-case handling, exports, startup idempotence and preservation of operator work.
 
-## V2 automated validation
-26 tests pass in the development environment, including the six retained V1 checks, eight detector tests, eight case-store tests and two Streamlit interaction tests. Coverage includes unrelated-account isolation, event ordering, duplicates, session/beneficiary boundaries, missing evidence, legitimate false positives, stale versions, role restrictions, denied actions, note revisions, reload persistence, closed-case rules and exports. AppTest opens all five workspaces; note validation retains the draft and a saved note survives rerun.
+Streamlit AppTest opens all five workspaces, checks an unassigned identity, retains a note draft on validation failure and confirms saved notes survive rerun. These checks do not replace a desktop visual review.
 
-Reproduce with:
+Reproduce from the project folder:
 ```powershell
 .\.venv313\Scripts\python.exe -m pytest -q
 .\.venv313\Scripts\python.exe scripts\validate_demo.py
 ```
 
-The walkthrough uses a temporary database and completes note → review → failed verification → simulated hold → session/credential reset → recovery → reviewer release → confirmed-takeover closure → JSON export. It does not modify the operator database.
+The walkthrough runs in a temporary database and does not alter the operator's saved cases. Simulated recovery checks are recorded assertions, not verification by a bank.
 
-## Synthetic evaluation
-[Machine-readable summary](../reports/EVALUATION.json): seed 42; 120 account journeys; 60 attacks and 60 legitimate journeys; 438 delivered records, 426 unique events, 12 duplicate deliveries removed. Rules: ato-rules-1.0; 15-minute event-time window.
+## Detection evaluation
+[Machine-readable summary](../reports/EVALUATION.json): seed 42; 120 account journeys; 60 attack and 60 legitimate journeys; 438 delivered records, 426 unique events, 12 duplicates removed; ato-rules-1.0; 15-minute event-time window.
 
 | TP | FP | TN | FN | Precision | Recall | False-positive rate |
 |---:|---:|---:|---:|---:|---:|---:|
 | 54 | 12 | 48 | 6 | 81.8% | 90.0% | 20.0% |
 
-Missing contact evidence causes six misses. Urgent legitimate sequences cause twelve false positives. Development seed 7 and evaluation seed 42 share authored scenario families; this is not independent real-bank validation. No timing reduction, ROI, real prevented loss or bank adoption is measured.
+Missing contact evidence causes six misses. Urgent legitimate sequences cause twelve false positives. Development and evaluation seeds differ but share the same authored scenario families. These figures do not estimate real-world accuracy, customer safety or prevented loss.
+
+## Populated operating history
+[Startup summary](../reports/DEMO_ACTIVITY.json) records the fresh-database state: eight active simulated holds and twelve closed cases. These counts derive from validated saved actions and case records, with labelled fictional notes and audit history. Repeat starts do not duplicate the activity. Existing operator notes and changed cases are skipped rather than overwritten.
+
+The owner applied v2.0.1, restarted Streamlit and supplied SS1 showing the expected counts and closed/released rows. This verifies the Windows overview and populated startup.
+
+## Historical baseline
+The V1 owner-side Python 3.13 run reported six tests passed in 5.18s and rendered the original dashboard/investigation views. The earlier Python 3.15 setup failed while building pandas. V1 width warnings were addressed by the new V2 UI's width API and raised Streamlit minimum. See [historical evidence](HISTORY.md).
 
 ## Remaining acceptance
-Automated Streamlit interactions are not a rendered desktop visual review. V2 Windows launch, browser layout review and actual V2 captures remain pending. Browser screenshot tooling could not be installed in the development environment; no V2 screenshots were fabricated. The launcher is supplied for the owner's local check.
+Review the V2 active investigation, documentation, response/recovery and evaluation layouts on the owner's computer. Capture populated current-version screenshots before using them in LinkedIn or Upwork materials. A current overview is available now; additional captures must not be fabricated or replaced with V1 images.
 
-## v2.0.1 populated startup
-Two additional tests verify fresh-database operating counts, repeat-start idempotence and preservation of existing operator notes/actions. The current suite has 26 passing tests. A fresh starter set contains eight active simulated holds and twelve closed cases, derived from saved workflow state. See [startup summary](../reports/DEMO_ACTIVITY.json). Demo activity is labelled in each seeded note and action. Prior operator work is never replaced to force these counts.
-
-## Owner-side v2.0.1 overview acceptance — 2026-10-28
-The owner applied the update, restarted Streamlit and supplied [V2 SS1](../screenshots/V2/SS1.png). The overview visibly renders 120 accounts, 66 alerts, eight active simulated holds and twelve closed cases. The new preloaded-history caption and closed/released queue rows are visible. Overview rendering and populated startup are confirmed on Windows. The remaining workspaces and end-to-end owner interaction are still pending visual acceptance.
+Production authentication, live bank integrations, security hardening and independent real-data validation are outside this local demonstration.

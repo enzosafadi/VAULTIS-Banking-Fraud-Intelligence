@@ -1,5 +1,12 @@
 # VAULTIS — Change Log
 
+## Showcase audit — 2026-10-28
+- Lead the README and current gallery with the actual populated V2.0.1 overview.
+- Move V1 image presentation to a historical gallery without deleting image files or archives.
+- Reconcile the verification record: Windows launch/overview confirmed; other workspace visual checks pending.
+- Save the session milestone and next action for later LinkedIn/Upwork preparation; nothing published or scheduled.
+- Check source/test correspondence, repository visibility, archives, relative links and report totals. Application code unchanged.
+
 ## V2 overview evidence — 2026-10-28
 - Publish actual owner-supplied V2 SS1 and confirm the populated Windows overview: 120 accounts, 66 alerts, eight active simulated holds and twelve closed cases.
 - Preserve all V1 screenshots and versions. Other V2 workspace acceptance remains pending.
