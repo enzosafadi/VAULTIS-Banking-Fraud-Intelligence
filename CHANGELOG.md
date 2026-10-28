@@ -1,5 +1,11 @@
 # VAULTIS — Documentation Change Log
 
+## Software v0.1.2 — ascending fraud-type bars — 2026-10-28
+- Sort severity bars by alert count from lowest to highest within each fraud type; retain stable severity colors and legend.
+- Recalculate positions under filters; preserve gaps and numeric labels.
+- Automated Streamlit checks confirmed ascending counts in all three groups and with a severity subset. Owner-side visual review remains pending.
+- Preserve v0.1.1 source on `archive/v0.1.1-before-ascending-bars` in the private repository. V2 remains planned.
+
 ## Software v0.1.1 — chart readability — 2026-10-28
 - Give each Command Center chart its own full-width row.
 - Separate grouped severity bars, use stable severity colors and show counts.
