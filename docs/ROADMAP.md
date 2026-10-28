@@ -8,7 +8,7 @@
 | 1. Verify baseline | Install and run V1, execute existing tests, record failures and inspect UI | Pending verification |
 | 2. Model journeys | Synthetic account histories, ordered events, labels, benign controls and data-quality cases | Planned |
 | 3. Detect takeover | Account-scoped temporal rules, explanations and reproducible evaluation | Planned |
-| 4. Operate cases | Persistent cases, ownership, valid transitions, simulated controls and audit history | Planned |
+| 4. Operate cases | Persistent cases, ownership, valid transitions, simulated controls, audit history and the [case documentation workspace](CASE_DOCUMENTATION.md), including durable notes, revisions, search and handovers | Planned |
 | 5. Recover accounts | Verification, authorized simulated release, recovery checklist and closure | Planned |
 | 6. Demonstrate V2 | Held-out scenario results, failure analysis, operator walkthrough and real UI screenshots | Planned |
 
