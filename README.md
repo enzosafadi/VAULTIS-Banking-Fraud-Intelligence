@@ -22,6 +22,7 @@ The planned workspace joins events into an evidence timeline, explains risk sign
 V2 denotes the new documentation and project orientation. It does not mean a software v2.0 release has shipped.
 
 ## Documentation
+- [Case documentation workspace: user notes, evidence and handovers](docs/CASE_DOCUMENTATION.md)
 - [Detailed use case: suspicion triggers, analyst response and institutional value](docs/USE_CASE.md)
 - [Business case](docs/BUSINESS_CASE.md)
 - [System overview](docs/SYSTEM_OVERVIEW.md)
