@@ -1,0 +1,33 @@
+{
+  "rule_version": "ato-rules-1.0",
+  "counts": {
+    "TP": 54,
+    "FP": 12,
+    "TN": 48,
+    "FN": 6
+  },
+  "precision": 0.8181818181818182,
+  "recall": 0.9,
+  "false_positive_rate": 0.2,
+  "quality": {
+    "input_events": 438,
+    "unique_events": 426,
+    "duplicates": 12
+  },
+  "seed": 42,
+  "journeys": 120,
+  "attack_journeys": 60,
+  "benign_journeys": 60,
+  "unit": "account journey",
+  "simulation": true,
+  "walkthrough": "Passed: note \u2192 containment \u2192 recovery \u2192 reviewer release \u2192 closure \u2192 export",
+  "validation_environment": {
+    "streamlit": "1.66.1",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "plotly": "6.9.0",
+    "pytest": "9.2.0",
+    "python": "3.12.14"
+  },
+  "automated_tests": 24
+}

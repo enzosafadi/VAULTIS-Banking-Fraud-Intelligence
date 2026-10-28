@@ -1,28 +1,26 @@
-# VAULTIS — V2 System Overview
-**Target design; not yet implemented or verified**
+# VAULTIS — System Overview
+**As implemented: local portfolio demonstration**
 
-## Account takeover workflow
-Synthetic account history and events → account-scoped temporal correlation → explainable risk signals → persistent investigation case → simulated verification/containment → recovery review → recorded closure.
+## Data flow
+Seeded synthetic events → normalization/deduplication → account-scoped temporal rules → persisted case snapshot → investigation and journal → simulated response/recovery → audit and export.
 
-## Planned components
-| Component | Responsibility |
+| Module | Responsibility |
 |---|---|
-| Journey simulator | Seeded attack and benign sequences with separate truth labels |
-| Event normalization | Stable IDs, event/ingestion timestamps, deduplication and quality flags |
-| Correlation and rules | Institution/account boundaries, configurable windows, rule version and reasons |
-| Investigation workspace | Evidence timeline, ownership, notes, decisions and open questions |
-| Case/action store | Persist case transitions and simulated protection/recovery actions |
-| Audit and evaluation | Trace decisions and measure scenario outcomes without truth-label leakage |
+| `vaultis/journeys.py` | Ten scenario families, event feed and separate ground-truth manifest |
+| `vaultis/ato.py` | Duplicate checks, temporal rules, explanations and evaluation |
+| `vaultis/cases.py` | SQLite storage, role demonstrations, state transitions, notes and exports |
+| `app.py` | Operations, investigation, documentation, evaluation and operator guide |
+| `scripts/validate_demo.py` | Reproducible scenario report and complete case-resolution walkthrough |
+| `tests/` | Rule, storage, workflow and Streamlit interaction checks |
 
-## Planned contracts
-Events: event ID, institution/account ID, session/device identifiers where applicable, event type, event time, ingestion time, synthetic attributes and quality flags. Transfer events additionally include transfer/beneficiary references, amount and currency. Journey truth labels are stored separately for evaluation.
-Cases: case ID, related evidence IDs, status, owner, score/rule version, disposition and timestamps.
-Actions: action ID, case ID, actor, action type, simulated outcome, reason, related transfer/session/hold, prior/new state and timestamp.
+The old engine and simulation modules remain as V1 historical code and regression tests; the V2 app imports the new modules.
 
-Missing evidence must be visible. Scores are heuristic prioritization signals, not fraud probabilities. Currency totals must stay separate unless an explicit conversion method is provided.
+## Storage and transactions
+The local SQLite store persists cases, journal entries, audit records and action submission tokens. Mutations use transactions; case actions compare an expected revision. Retried identical tokens are idempotent. Note corrections form a linked revision chain; a stale revision cannot silently replace a newer correction.
 
-## Existing software baseline
-The repository currently contains the V1 v0.1 Streamlit prototype, category rules and independent synthetic events. It does not yet establish the V2 temporal workflow, persistent cases or simulated recovery. The owner-provided local evidence now confirms launch and Command Center rendering plus 6 existing tests passed in 5.18s on Windows/Python 3.13. Other views are not yet reviewed. See [verification record](VERIFICATION.md).
+Audit records include actor, UTC timestamp, reason and before/after state. Denied actions on accessible cases are recorded. JSON report preparation is audited, but browser download completion is not tracked. No reset/delete button is supplied.
 
 ## Boundaries
-Synthetic data only. No real customer accounts, payment execution, bank feeds or protection guarantees. Authentication, authorization and secure deployment remain additional engineering work before any non-local use.
+Detection operates on normalized events without reading truth labels. Evaluation uses the separate manifest. A local seeded case snapshot is created once; this version does not ingest live streams or update a running case from a changing upstream feed. Reproducible late-event evaluation uses the complete fixture and reports when evidence became available.
+
+Demo identities are selectable and are not authentication. Analyst assignment checks and reviewer-only operations illustrate policy; they do not secure an exposed server. Run locally only. The database is not encrypted and direct filesystem access can alter it. No actual bank actions, ML model, external AI service or uploaded binary documents are involved.

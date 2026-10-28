@@ -1,17 +1,16 @@
-# VAULTIS — V2 Delivery Roadmap
-**Current orientation: Account Takeover Detection & Response | 2026-10-28**
+# VAULTIS — Delivery Status
+**v2.0.0-demo | 2026-10-28**
 
-| Milestone | Work and exit evidence | Status |
-|---|---|---|
-| V1 preservation | Retain original documentation under docs/V1 | Included in this documentation revision |
-| V2 definition | Focus, scope, scenarios and acceptance criteria | Defined in [V2 specification](V2_SCOPE.md) |
-| 1. Verify baseline | Install and run V1, execute existing tests, record failures and inspect UI | Partial: 6 tests passed; local launch and Command Center captured; remaining views/filters pending. See [evidence](VERIFICATION.md) |
-| 2. Model journeys | Synthetic account histories, ordered events, labels, benign controls and data-quality cases | Planned |
-| 3. Detect takeover | Account-scoped temporal rules, explanations and reproducible evaluation | Planned |
-| 4. Operate cases | Persistent cases, ownership, valid transitions, simulated controls, audit history and the [case documentation workspace](CASE_DOCUMENTATION.md), including durable notes, revisions, search and handovers | Planned |
-| 5. Recover accounts | Verification, authorized simulated release, recovery checklist and closure | Planned |
-| 6. Demonstrate V2 | Held-out scenario results, failure analysis, operator walkthrough and real UI screenshots | Planned |
+| Milestone | Status / evidence |
+|---|---|
+| Preserve V1 | docs/V1 and archive/v0.1.2-before-v2 retain preceding work |
+| Verify V1 | Six tests and owner-supplied dashboard/investigation screenshots |
+| Model account journeys | Implemented: ten scenario families, separate truth labels and deduplication |
+| Detect takeover | Implemented: two temporal rules, source evidence and evaluation |
+| Operate cases | Implemented: SQLite, ownership, revisions, notes, handovers and audit |
+| Recover accounts | Implemented: simulated checks and reviewer-controlled release/closure |
+| Verify V2 logic/UI interactions | 24 passing automated tests and complete synthetic case walkthrough |
+| V2 desktop visual acceptance | Pending owner-side launch and workspace review |
+| V2 portfolio screenshots | Pending actual V2 capture; published images are explicitly V1 |
 
-Advance through the exit gates before claiming completion. Maintain one deep account takeover workflow; broad multi-bank or general-fraud expansion is deferred. AI/ML is not a prerequisite or implemented V2 capability.
-
-Documentation V2 supersedes the earlier roadmap. Software remains the original v0.1 baseline until changes are implemented and tested.
+The next action is to run the V2 package locally, verify each workspace and capture actual V2 screenshots. The local demonstration is implemented; production banking integration, authentication and independent validation are separate future work, not promised completed features.

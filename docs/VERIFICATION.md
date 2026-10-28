@@ -1,51 +1,30 @@
-# VAULTIS — V1 Local Verification
-**Evidence recorded: 2026-10-28 | V1 software v0.1 | V2 remains planned**
+# VAULTIS — Verification Record
+**2026-10-28 | v2.0.0-demo**
 
-## Evidence source and scope
-The project owner ran the private V1 baseline locally on Windows with Python 3.13 in a dedicated virtual environment. The results below come from the supplied terminal transcript and actual running-app screenshot, not an independent CI rerun.
+## V1 owner-side evidence
+Windows/Python 3.13 dependency installation succeeded; the six original tests passed in 5.18s. The owner ran the app locally and supplied actual dashboard and investigation captures. Later captures confirm the readable v0.1.2 layout and ascending fraud-type bars. See [gallery](SCREENSHOTS.md).
 
-| Check | Observed result | Scope |
-|---|---|---|
-| Dependency installation | Successfully installed using Python 3.13 | Owner-provided terminal output |
-| Existing unit tests | 6 passed in 5.18s | Existing V1 suite only |
-| Local application launch | Streamlit served the app on localhost:8501 | Terminal and screenshot |
-| Command Center rendering | Sidebar, metrics, charts and priority queue visible | Screenshot SS1 |
-| Other workspaces and filter interactions | Not yet reviewed | Pending |
-| V2 takeover workflow and case documentation | Not implemented | No V2 verification claimed |
+The V1 Python 3.15 attempt failed during a pandas source build. Streamlit also warned about deprecated width arguments. V2 uses the newer width API with a raised Streamlit minimum. No V2 Windows execution is claimed yet.
 
-## Reproduction commands used
-Run from the repository folder in Windows PowerShell:
+## V2 automated validation
+24 tests pass in the development environment, including the six retained V1 checks, eight detector tests, eight case-store tests and two Streamlit interaction tests. Coverage includes unrelated-account isolation, event ordering, duplicates, session/beneficiary boundaries, missing evidence, legitimate false positives, stale versions, role restrictions, denied actions, note revisions, reload persistence, closed-case rules and exports. AppTest opens all five workspaces; note validation retains the draft and a saved note survives rerun.
+
+Reproduce with:
 ```powershell
-py -3.13 -m venv .venv313
-.\.venv313\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv313\Scripts\python.exe -m pytest -q
-.\.venv313\Scripts\python.exe -m streamlit run app.py
+.\.venv313\Scripts\python.exe scripts\validate_demo.py
 ```
 
-Observed test output:
-```text
-......                                                               [100%]
-6 passed in 5.18s
-```
+The walkthrough uses a temporary database and completes note → review → failed verification → simulated hold → session/credential reset → recovery → reviewer release → confirmed-takeover closure → JSON export. It does not modify the operator database.
 
-## Screenshot SS1 — V1 Command Center and local test evidence
-![SS1: actual V1 dashboard with local passing-test and launch output](../screenshots/V1/SS1.png)
+## Synthetic evaluation
+[Machine-readable summary](../reports/EVALUATION.json): seed 42; 120 account journeys; 60 attacks and 60 legitimate journeys; 438 delivered records, 426 unique events, 12 duplicate deliveries removed. Rules: ato-rules-1.0; 15-minute event-time window.
 
-Original owner-supplied screenshot, published without generated content or alterations. It includes the app and terminal side by side. This is historical V1 evidence, not a V2 interface preview.
+| TP | FP | TN | FN | Precision | Recall | False-positive rate |
+|---:|---:|---:|---:|---:|---:|---:|
+| 54 | 12 | 48 | 6 | 81.8% | 90.0% | 20.0% |
 
-The visible 2,500 monitored events, 406 critical alerts, 904 high/critical events and 484 linked signals are outputs of the synthetic demonstration. They are not measured detection performance, real bank activity or prevented losses.
+Missing contact evidence causes six misses. Urgent legitimate sequences cause twelve false positives. Development seed 7 and evaluation seed 42 share authored scenario families; this is not independent real-bank validation. No timing reduction, ROI, real prevented loss or bank adoption is measured.
 
-## Known compatibility findings
-- The initial Python 3.15 environment attempted a pandas source build and failed because the build toolchain was unavailable. The Python 3.13 environment installed successfully. This does not establish support for all other Python versions.
-- Streamlit emitted deprecation warnings for `use_container_width`, recommending `width='stretch'` or `width='content'`. The dashboard still rendered. Updating these calls remains a code-maintenance task; this documentation update does not fix them.
-- An earlier interrupted environment creation was retried successfully. It is not counted as an application defect.
-
-## Remaining checks
-Inspect Fraud Investigations, Cross-Category Intelligence and Bank Network; exercise filters and empty selections; capture additional actual screenshots only after reviewing each view. Preserve the V1 runtime while implementing and evaluating the V2 account takeover workflow.
-
-Passing six V1 tests and rendering one page do not validate fraud accuracy, persistent case handling, access control, recovery or protection of real accounts.
-
-## Software v0.1.1 chart patch — 2026-10-28
-The private app now gives the two Command Center charts separate full-width rows, adds gaps and labels, applies stable severity colors and sorts bank scores on a fixed 0–100 scale. The previous runtime is preserved at `archive/v0.1-before-chart-spacing` in the private repository.
-
-In the development environment, the six existing tests passed in 0.42s. Streamlit AppTest loaded the updated Command Center without an application exception and exercised a single-bank filter and an empty bank selection. These are automated checks, not a browser screenshot review. The owner's Windows copy still needs the updated app.py and a visual recheck. SS1 shows the earlier layout and is retained as V1 history.
+## Remaining acceptance
+Automated Streamlit interactions are not a rendered desktop visual review. V2 Windows launch, browser layout review and actual V2 captures remain pending. Browser screenshot tooling could not be installed in the development environment; no V2 screenshots were fabricated. The launcher is supplied for the owner's local check.

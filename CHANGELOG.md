@@ -1,4 +1,12 @@
-# VAULTIS — Documentation Change Log
+# VAULTIS — Change Log
+
+## v2.0.0-demo — 2026-10-28
+- Deliver the focused account takeover local application: event journeys, temporal rules, persistent cases, staff journal, simulated response/recovery and JSON case reports.
+- Add held-out synthetic evaluation with false positives and misses; 24 automated tests and a reproducible complete workflow.
+- Add owner-supplied V1 screenshots SS2 and SS3; keep SS1 and archived versions.
+- Preserve all preceding source and documents on archive/v0.1.2-before-v2.
+- Replace deprecated width arguments in the new UI; require Streamlit 1.50 or newer.
+- V2 desktop visual acceptance and actual V2 captures remain pending; no real banking protection or production readiness claimed.
 
 ## Software v0.1.2 — ascending fraud-type bars — 2026-10-28
 - Sort severity bars by alert count from lowest to highest within each fraud type; retain stable severity colors and legend.

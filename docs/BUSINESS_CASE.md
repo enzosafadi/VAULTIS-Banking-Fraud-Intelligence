@@ -1,33 +1,26 @@
-# VAULTIS — V2 Business Case
-**Account Takeover Detection & Response | Simulated portfolio project**
+# VAULTIS — Business Case
+**Account takeover detection and response | v2.0.0-demo | Simulation**
 
-## Problem
-A suspicious login, changed contact details, beneficiary addition and transfer attempt can appear separately. An analyst needs a time-ordered account view to decide whether these signals indicate takeover or legitimate activity, then document an appropriate response and recovery.
+## Problem and intended users
+A login anomaly, recovery-contact change, new beneficiary and transfer attempt can appear in separate systems. A fraud analyst needs to understand the sequence, distinguish suspicion from proof, coordinate a proportionate response and leave a clear recovery record for colleagues.
 
-## Intended users
-Fraud analysts own triage and case evidence. Fraud operations leads review escalations and simulated release decisions. Security and customer-support roles supply session and recovery context in the demonstration.
+The demonstration serves fraud analysts, fraud operations reviewers and support staff. One fictional institution, Northbridge Financial, is used to keep the workflow focused.
 
-## Design response and measurement
-| Need | Planned response | Evidence to collect |
+## Solution and institutional usefulness
+| Operational need | Implemented demonstration | Evidence / limitation |
 |---|---|---|
-| Connect suspicious stages | Account-scoped event timeline | Scenario-level coverage and missed sequences |
-| Explain prioritization | Versioned rules and evidence reasons | Reproducible scores and analyst review |
-| Protect without excessive friction | Simulated verification and holds | Benign restriction rate and action outcomes |
-| Resolve consistently | Persistent cases and recovery checks | Valid transitions, unresolved cases and closure evidence |
-| Assess detection quality | Separate truth labels and held-out scenarios | Confusion matrix, precision, recall and false-positive rate |
+| Recognize linked activity | Account-scoped temporal rules and source-event timeline | Rule tests; incomplete evidence still creates misses |
+| Explain prioritization | Rule version, matched events, score and reasons | Heuristic signals, not calibrated probabilities |
+| Coordinate response | Persisted cases and simulated verification/containment | No real transfer or session enforcement |
+| Preserve staff knowledge | Case notes, contact summaries, corrections, handovers and filters | Local SQLite; no production identity system |
+| Complete recovery consistently | Required recovery checks and reviewer release | Executed synthetic walkthrough |
+| Review decisions | Recorded action history and JSON report | App-level history, not tamper-proof evidence storage |
 
-## Demonstration
-A fictional customer account shows compromised access, security changes, a new beneficiary and an attempted transfer. The analyst reviews evidence, records a disposition, simulates containment and completes recovery checks. Legitimate travel and device replacement provide comparison cases.
+## Example suspicion trigger
+An unfamiliar-device login at 09:02, recovery-phone change at 09:04, new beneficiary at 09:06 and CAD 4,800 transfer attempt at 09:09 are suspicious together. A 15-minute account/session sequence links the events. Each event alone can be legitimate. See the [worked use case](USE_CASE.md).
 
-## Detailed use case and suspicion trigger
-See [UC-ATO-001: Account Takeover Use Case](USE_CASE.md) for the complete fictional timeline, proposed rule, response workflow, legitimate comparison and acceptance evidence.
-
-In that example, a new-device login at 09:02 is followed by a recovery-phone change, a new beneficiary and a CAD 4,800 transfer attempt at 09:09. The proposed trigger links those four events on the same account within an illustrative 15-minute window. The combination suggests possible control of both account access and the payment destination; each event alone can have a legitimate explanation.
-
-VAULTIS is intended to help the institution assemble evidence in one view, explain alert priority, coordinate simulated verification and containment, and retain the recovery/closure record. Detection quality, analyst effort and restrictions on legitimate customers must be measured before claiming benefit. The rule and workflow remain V2 design, not implemented protection.
-
-## Scope and delivery status
-The V2 design is defined; implementation remains pending. The private repository retains the V1 broad fraud code baseline. The V1 baseline now has owner-provided evidence of local launch, Command Center rendering and six passing existing tests; see [verification record](VERIFICATION.md). This does not validate the V2 design. The first V2 demonstration concentrates on one fictional institution rather than expanding the eight-bank comparison.
+## Evidence of progress
+The application and automated walkthrough are implemented. On a 120-journey synthetic set, detection produces 54 TP, 12 FP, 48 TN and 6 FN. False positives arise from an urgent legitimate sequence; missing evidence hides some attacks. These outcomes show both the mechanism and its limits, not real-bank effectiveness.
 
 ## Value hypothesis
-Improved investigative context and consistent response are hypotheses. Synthetic evaluation cannot establish production accuracy, customer safety, actual financial savings or operational adoption. No ROI or loss-prevention result is claimed. See [V2 scope](V2_SCOPE.md) and [roadmap](ROADMAP.md).
+The intended benefits are less context gathering, consistent response decisions and clearer handovers. No analyst-time study, adoption, real prevented loss or ROI has been measured. Actual institutional use would require authorized integrations, independent validation, security engineering and an approved operating policy.

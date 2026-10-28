@@ -1,6 +1,6 @@
 # VAULTIS — Account Takeover Use Case
 **UC-ATO-001 | Documentation V2 | 2026-10-28**
-**Fictional scenario and proposed system behavior; not an executed test or measured result.**
+**Fictional worked example. The V2 implementation is evaluated separately in VERIFICATION.md.**
 
 ## Business purpose
 Help a financial institution recognize a connected attempt to take over an existing digital banking account, investigate the evidence, and coordinate a proportionate response before completing recovery. The central question is: does this sequence fit the customer's normal activity, or does it warrant verification and containment?
@@ -82,5 +82,5 @@ These are proposed operational benefits, not verified improvements. VAULTIS woul
 9. A held-out scenario report records TP, FP, TN and FN, plus customer-friction outcomes. No numerical success target is claimed before baseline evaluation.
 
 ## Implementation status and references
-This document specifies intended V2 behavior. The existing software is the V1 v0.1 broad fraud prototype; the workflow above is not yet implemented or verified.
+The local V2 app now implements correlation, cases, simulated response/recovery and staff documentation. This narrative remains an illustrative fixture, not a real incident. See [verification](VERIFICATION.md) for executed results and [scope](V2_SCOPE.md) for limits. This version processes a complete seeded feed; incremental live alert updates are not implemented.
 See [V2 scope](V2_SCOPE.md), [roadmap](ROADMAP.md) and the [V1 archive](V1/README.md).
