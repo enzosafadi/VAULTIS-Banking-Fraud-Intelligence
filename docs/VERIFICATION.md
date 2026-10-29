@@ -44,3 +44,6 @@ The V1 owner-side Python 3.13 run reported six tests passed in 5.18s and rendere
 Review the V2 active investigation, documentation, response/recovery and evaluation layouts on the owner's computer. Capture populated current-version screenshots before using them in LinkedIn or Upwork materials. A current overview is available now; additional captures must not be fabricated or replaced with V1 images.
 
 Production authentication, live bank integrations, security hardening and independent real-data validation are outside this local demonstration.
+
+## ADLC evidence
+A fresh local automated gate reproduced the existing evaluation and starter states and passed all 26 tests. Twelve requirements are traced in the private core. The [status report](../reports/ADLC_STATUS.json) records one accepted owner check and five pending; it does not claim complete visual acceptance or a passing remote CI run. See [ADLC](ADLC.md).

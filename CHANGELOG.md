@@ -1,5 +1,11 @@
 # VAULTIS — Change Log
 
+## ADLC delivery controls — 2026-10-28
+- Apply requirements/implementation/test traceability and separate automated verification from owner acceptance.
+- Record a fresh 26-test pass and reproduced synthetic metrics/startup states; final acceptance remains pending.
+- Add public lifecycle evidence and a sanitized status report; implementation, validator and CI stay private.
+- Preserve the prior baseline on archive/v2.0.1-before-adlc; app behavior remains v2.0.1-demo.
+
 ## Showcase audit — 2026-10-28
 - Lead the README and current gallery with the actual populated V2.0.1 overview.
 - Move V1 image presentation to a historical gallery without deleting image files or archives.

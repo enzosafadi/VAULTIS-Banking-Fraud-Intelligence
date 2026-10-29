@@ -14,3 +14,6 @@
 | V2 portfolio screenshots | Actual V2 SS1 published; other workspace captures pending. V1 history preserved |
 
 The next action is to review an active V2 investigation, its notes, response controls and evaluation, then capture those views. The local demonstration is implemented; production banking integration, authentication and independent validation are separate future work, not promised completed features.
+
+## ADLC status
+Lifecycle controls and traceability are applied. Local automated verification passes; final portfolio release remains at the owner-acceptance stage. See [ADLC](ADLC.md). Application behavior remains v2.0.1-demo.

@@ -1,0 +1,36 @@
+{
+  "baseline": "v2.0.1-demo",
+  "observed_at_utc": "2026-10-29T03:31:43.306538+00:00",
+  "scope": "Local automated software checks; no real-bank validation",
+  "automated_gate": "passed",
+  "tests": {
+    "tests": 26,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "traced_requirements": 12,
+  "evaluation": {
+    "TP": 54,
+    "FP": 12,
+    "TN": 48,
+    "FN": 6
+  },
+  "startup": {
+    "accounts": 120,
+    "correlated_alerts": 66,
+    "active_simulated_holds": 8,
+    "closed_cases": 12
+  },
+  "human_accepted": [
+    "UAT-01"
+  ],
+  "human_pending": [
+    "UAT-02",
+    "UAT-03",
+    "UAT-04",
+    "UAT-05",
+    "UAT-06"
+  ],
+  "portfolio_release_ready": false
+}

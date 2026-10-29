@@ -45,3 +45,6 @@ Missing evidence creates misses; an urgent legitimate sequence creates false pos
 Source and raw synthetic records stay in the private VAULTIS-Core repository. V1 documentation remains in [docs/V1](docs/V1/README.md); all preceding public content is preserved on `archive/v0.1.2-before-v2`. V2 delivers a local portfolio demonstration; production authentication, secure deployment, integrations and independent validation are outside this release.
 
 [Release status and remaining verification](docs/RELEASE_CHECKPOINT.md)
+
+## ADLC traceability
+[Delivery lifecycle and acceptance status](docs/ADLC.md) connect twelve requirements to verified implementation evidence. The automated gate passes; one owner check is accepted and five remain pending. [Machine-readable status](reports/ADLC_STATUS.json).

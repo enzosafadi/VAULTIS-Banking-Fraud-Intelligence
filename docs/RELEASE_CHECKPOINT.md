@@ -15,3 +15,6 @@ Owner-side visual review and populated current-version screenshots for the inves
 This is independent simulated portfolio work, not a client engagement, production banking service or evidence of real prevented loss.
 
 [Verification](VERIFICATION.md) · [Roadmap](ROADMAP.md) · [Version history](HISTORY.md)
+
+## ADLC checkpoint
+The automated delivery gate passes. Final owner acceptance remains pending for UAT-02 through UAT-06. The private core retains the full requirement/test matrix, decisions, validator and CI configuration. See [delivery evidence](ADLC.md).
