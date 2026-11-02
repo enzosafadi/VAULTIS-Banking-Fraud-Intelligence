@@ -1,4 +1,8 @@
 # VAULTIS — Account Takeover Detection & Response
+
+## Project roadmap — concept to sale
+
+![Current project timeline](docs/project-roadmap.svg)
 **Independent simulated portfolio project | v2.0.1-demo | Private implementation**
 
 VAULTIS explores how a digital banking fraud team connects suspicious account activity, investigates the evidence, simulates proportionate protective actions and documents customer recovery.
