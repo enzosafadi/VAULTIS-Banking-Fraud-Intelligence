@@ -52,3 +52,7 @@ Source and raw synthetic records stay in the private VAULTIS-Core repository. V1
 
 ## ADLC traceability
 [Delivery lifecycle and acceptance status](docs/ADLC.md) connect twelve requirements to verified implementation evidence. The automated gate passes; one owner check is accepted and five remain pending. [Machine-readable status](reports/ADLC_STATUS.json).
+
+## Repository verification
+
+[Current scoped verification results](VERIFICATION.md). Run `python tools/verify_repository.py --visibility public`.
